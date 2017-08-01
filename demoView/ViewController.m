@@ -17,8 +17,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.myOutlet.delegate = self;
 }
 
+
+-(void) isClicked {
+    UIStoryboard *targetStoryBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *targetVC = (UIViewController *)[targetStoryBoard instantiateViewControllerWithIdentifier:@"SecondViewController"];
+    [self.navigationController pushViewController:targetVC animated:YES];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

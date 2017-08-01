@@ -15,6 +15,9 @@
 		C84682B61F3048C4009A9CB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C84682B41F3048C4009A9CB2 /* LaunchScreen.storyboard */; };
 		C84682C11F3048C4009A9CB2 /* demoViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C84682C01F3048C4009A9CB2 /* demoViewTests.m */; };
 		C84682CC1F3048C4009A9CB2 /* demoViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C84682CB1F3048C4009A9CB2 /* demoViewUITests.m */; };
+		C84682DD1F304912009A9CB2 /* Mini.m in Sources */ = {isa = PBXBuildFile; fileRef = C84682DC1F304912009A9CB2 /* Mini.m */; };
+		C84682DF1F304924009A9CB2 /* Mini.xib in Resources */ = {isa = PBXBuildFile; fileRef = C84682DE1F304924009A9CB2 /* Mini.xib */; };
+		C84682E31F304952009A9CB2 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84682E21F304952009A9CB2 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		C84682C71F3048C4009A9CB2 /* demoViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = demoViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C84682CB1F3048C4009A9CB2 /* demoViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = demoViewUITests.m; sourceTree = "<group>"; };
 		C84682CD1F3048C4009A9CB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C84682DB1F304912009A9CB2 /* Mini.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mini.h; sourceTree = "<group>"; };
+		C84682DC1F304912009A9CB2 /* Mini.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mini.m; sourceTree = "<group>"; };
+		C84682DE1F304924009A9CB2 /* Mini.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Mini.xib; sourceTree = "<group>"; };
+		C84682E11F304952009A9CB2 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		C84682E21F304952009A9CB2 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +113,10 @@
 				C84682AA1F3048C4009A9CB2 /* AppDelegate.m */,
 				C84682AC1F3048C4009A9CB2 /* ViewController.h */,
 				C84682AD1F3048C4009A9CB2 /* ViewController.m */,
+				C84682E11F304952009A9CB2 /* SecondViewController.h */,
+				C84682E21F304952009A9CB2 /* SecondViewController.m */,
 				C84682AF1F3048C4009A9CB2 /* Main.storyboard */,
+				C84682E01F304927009A9CB2 /* Mini */,
 				C84682B21F3048C4009A9CB2 /* Assets.xcassets */,
 				C84682B41F3048C4009A9CB2 /* LaunchScreen.storyboard */,
 				C84682B71F3048C4009A9CB2 /* Info.plist */,
@@ -138,6 +149,16 @@
 				C84682CD1F3048C4009A9CB2 /* Info.plist */,
 			);
 			path = demoViewUITests;
+			sourceTree = "<group>";
+		};
+		C84682E01F304927009A9CB2 /* Mini */ = {
+			isa = PBXGroup;
+			children = (
+				C84682DB1F304912009A9CB2 /* Mini.h */,
+				C84682DC1F304912009A9CB2 /* Mini.m */,
+				C84682DE1F304924009A9CB2 /* Mini.xib */,
+			);
+			name = Mini;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +269,7 @@
 			files = (
 				C84682B61F3048C4009A9CB2 /* LaunchScreen.storyboard in Resources */,
 				C84682B31F3048C4009A9CB2 /* Assets.xcassets in Resources */,
+				C84682DF1F304924009A9CB2 /* Mini.xib in Resources */,
 				C84682B11F3048C4009A9CB2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,8 +295,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C84682E31F304952009A9CB2 /* SecondViewController.m in Sources */,
 				C84682AE1F3048C4009A9CB2 /* ViewController.m in Sources */,
 				C84682AB1F3048C4009A9CB2 /* AppDelegate.m in Sources */,
+				C84682DD1F304912009A9CB2 /* Mini.m in Sources */,
 				C84682A81F3048C4009A9CB2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SecondViewController.h
 //  demoView
 //
 //  Created by Timur Aykut YILDIRIM on 01/08/2017.
@@ -7,11 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Mini.h"
 
-@interface ViewController : UIViewController <SelectionProtocol>
-
-@property (weak, nonatomic) IBOutlet Mini *myOutlet;
+@interface SecondViewController : UIViewController
 
 @end
-
