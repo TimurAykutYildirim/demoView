@@ -10,8 +10,7 @@
 #import "Mini.h"
 
 @interface ViewController : UIViewController <SelectionProtocol>
-
-@property (weak, nonatomic) IBOutlet Mini *myOutlet;
+@property (weak, nonatomic) IBOutlet Mini *miniView;
 
 @end
 

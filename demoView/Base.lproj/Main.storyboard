@@ -38,7 +38,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="myOutlet" destination="QPB-Ah-ILW" id="CM5-nT-Yfk"/>
+                        <outlet property="miniView" destination="QPB-Ah-ILW" id="Z7q-q4-XO4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
