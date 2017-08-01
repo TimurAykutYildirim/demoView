@@ -23,9 +23,10 @@
 
 
 -(void) isClicked {
-    UIStoryboard *targetStoryBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UIViewController *targetVC = (UIViewController *)[targetStoryBoard instantiateViewControllerWithIdentifier:@"SecondViewController"];
-    [self.navigationController pushViewController:targetVC animated:YES];
+    NSString * storyboardName = @"Main";
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
+    UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"SecondViewController"];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

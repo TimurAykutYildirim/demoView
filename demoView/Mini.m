@@ -44,21 +44,9 @@
 }
 - (IBAction)btnClick:(id)sender {
     
-    [self.delegate isClicked];
-    
-//    if (self.delegate && [self.delegate respondsToSelector:@selector(isClicked)]) {
-//        [self.delegate isClicked];
-//    } else {
-//        NSLog(@"AAAAAAAAAAAAAA");
-//    }
-//    
-//    if (self.delegate && [self.delegate performSelector:@selector(ViewController:isClicked:)]) {
-//        [self.delegate isClicked];
-//    }
-    
-//    if (self.delegate && [self.delegate respondsToSelector:@selector(ViewController:isClicked:)]) {
-//        [self.delegate isClicked]; } else { NSLog(@"AAAAAAAAAAAAAA");
-//    }
+    if ([self.delegate conformsToProtocol:@protocol(SelectionProtocol)]) {
+        [self.delegate isClicked];
+    }
 }
 
 @end
