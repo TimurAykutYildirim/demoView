@@ -19,6 +19,7 @@
     // Do any additional setup after loading the view, typically from a nib.
 
     self.miniView.delegate = self;
+    self.miniView.myLabel.text = @"QQQQQQQ";
 }
 
 

@@ -12,6 +12,7 @@
 
 @interface Mini : UIView
 
+@property (weak, nonatomic) IBOutlet UILabel *myLabel;
 @property (nonatomic, weak) id<SelectionProtocol> delegate;
 
 - (IBAction)btnClick:(id)sender;
