@@ -49,4 +49,15 @@
     }
 }
 
+- (IBAction)switchClick:(id)sender {
+    if ([self.delegate conformsToProtocol:@protocol(SelectionProtocol)]) {
+        if ([_mySwitch isOn]==true) {
+            _switchState = true;
+        } else {
+            _switchState = false;
+        }
+        [self.delegate isSwitchOn:_switchState];
+    }
+}
+
 @end

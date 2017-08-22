@@ -30,6 +30,15 @@
     [self presentViewController:vc animated:YES completion:nil];
 }
 
+-(BOOL) isSwitchOn: (BOOL) res {
+    if (res == true) {
+        NSLog(@"true");
+    } else {
+        NSLog(@"false");
+    }
+    return res;
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Mini">
             <connections>
                 <outlet property="myLabel" destination="emX-vQ-FbA" id="Y4e-HS-ZkN"/>
+                <outlet property="mySwitch" destination="0Xx-MN-lQl" id="ZGq-Ea-4cD"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -28,7 +29,13 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r2v-59-eUs">
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0Xx-MN-lQl">
+                    <rect key="frame" x="54" y="44" width="51" height="31"/>
+                    <connections>
+                        <action selector="switchClick:" destination="-1" eventType="valueChanged" id="QIo-52-exb"/>
+                    </connections>
+                </switch>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r2v-59-eUs">
                     <rect key="frame" x="0.0" y="0.0" width="160" height="80"/>
                     <connections>
                         <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="qq0-kn-dxS"/>
@@ -37,11 +44,15 @@
             </subviews>
             <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="0Xx-MN-lQl" secondAttribute="bottom" constant="5" id="47x-49-MOl"/>
+                <constraint firstItem="0Xx-MN-lQl" firstAttribute="top" secondItem="emX-vQ-FbA" secondAttribute="bottom" constant="3" id="6yE-YA-quV"/>
                 <constraint firstItem="r2v-59-eUs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="D5d-N6-XcT"/>
                 <constraint firstAttribute="trailing" secondItem="emX-vQ-FbA" secondAttribute="trailing" constant="16" id="EjS-MV-US7"/>
                 <constraint firstItem="emX-vQ-FbA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="HRP-x1-oOh"/>
+                <constraint firstAttribute="trailing" secondItem="0Xx-MN-lQl" secondAttribute="trailing" constant="57" id="TVr-NG-sJy"/>
                 <constraint firstItem="emX-vQ-FbA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="Tgb-BY-dcA"/>
                 <constraint firstAttribute="bottom" secondItem="r2v-59-eUs" secondAttribute="bottom" id="Uyd-pa-c99"/>
+                <constraint firstItem="0Xx-MN-lQl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="54" id="iC6-hl-abd"/>
                 <constraint firstItem="r2v-59-eUs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="sWZ-ig-84c"/>
                 <constraint firstAttribute="trailing" secondItem="r2v-59-eUs" secondAttribute="trailing" id="umq-3C-uRq"/>
             </constraints>

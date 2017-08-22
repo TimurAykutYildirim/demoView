@@ -13,7 +13,10 @@
 @interface Mini : UIView
 
 @property (weak, nonatomic) IBOutlet UILabel *myLabel;
+@property (weak, nonatomic) IBOutlet UISwitch *mySwitch;
 @property (nonatomic, weak) id<SelectionProtocol> delegate;
+
+@property BOOL switchState;
 
 - (IBAction)btnClick:(id)sender;
 
@@ -24,5 +27,6 @@
 
 @required
 -(void) isClicked;
+-(BOOL) isSwitchOn:(BOOL)res;
 
 @end
