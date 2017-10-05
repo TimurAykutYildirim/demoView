@@ -23,8 +23,13 @@
 }
 
 
--(void) isClicked {
-    NSLog(@"apples");
+-(void) isClickedFromView:(Mini *)m {
+    
+    if (m.tag==1) {
+        NSLog(@"apples");
+    } else {
+        NSLog(@"oranges");
+    }
     NSString * storyboardName = @"Main";
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
     UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"SecondViewController"];

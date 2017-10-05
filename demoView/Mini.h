@@ -22,6 +22,6 @@
 @protocol SelectionProtocol <NSObject>
 
 @required
--(void) isClicked;
+-(void) isClickedFromView:(Mini *)m;
 
 @end

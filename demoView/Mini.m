@@ -45,7 +45,7 @@
 - (IBAction)btnClick:(id)sender {
     
     if ([self.delegate conformsToProtocol:@protocol(SelectionProtocol)]) {
-        [self.delegate isClicked];
+        [self.delegate isClickedFromView:self];
     }
 }
 
