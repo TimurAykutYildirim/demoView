@@ -24,7 +24,7 @@
 
 
 -(void) isClicked {
-    NSLog(@"🚩🚩🚩");
+    NSLog(@"apples");
     NSString * storyboardName = @"Main";
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
     UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"SecondViewController"];
