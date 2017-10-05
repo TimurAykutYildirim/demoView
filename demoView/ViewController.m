@@ -19,10 +19,12 @@
     // Do any additional setup after loading the view, typically from a nib.
 
     self.miniView.delegate = self;
+    self.miniView2.delegate = self;
 }
 
 
 -(void) isClicked {
+    NSLog(@"🚩🚩🚩");
     NSString * storyboardName = @"Main";
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
     UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"SecondViewController"];

@@ -11,6 +11,7 @@
 
 @interface ViewController : UIViewController <SelectionProtocol>
 @property (weak, nonatomic) IBOutlet Mini *miniView;
+@property (weak, nonatomic) IBOutlet Mini *miniView2;
 
 @end
 
